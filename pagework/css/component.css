@@ -4,6 +4,7 @@
 	position: relative;
 	width: 100%;
 	background: #333;
+	min-width:1200px;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
@@ -59,11 +60,13 @@
 	font-weight: 200;
 }
 
-.arrow-down{width:57px;height:80px;
+.arrow-down{width:43px;height:60px;
       cursor:pointer;
        position:absolute;left:50%;
       margin-left:-50px;
       top:84%;z-index:100;
+	  background:url(../img/arrow2.png) no-repeat;
+	  background-size: cover;
       
       }
 /*section*/
@@ -140,6 +143,15 @@ section .h-01 {
   margin-bottom: 18px;
   
 }
+.worker{width:100%;height:60px;line-height:60px;text-align:center;margin:10px auto;}
+.worker i{background:url(../img/pencils.png) no-repeat;display:inline-block;
+           width:230px;height:29px; background-size: cover;
+		   }
+.worker a{font-family: segoeuib, Arial, sans-serif;
+  font-size: 18px;display:inline-block;
+  font-weight: normal;color:#63c6ae;
+  line-height: 1;margin-left:50px;}
+ .worker a:hover{color: #23232e;}
 .columns{margin-bottom:60px;}
 /*nav*/
 section .contain{background:#23232e;
@@ -294,7 +306,7 @@ section .contain{background:#23232e;
 
 /*banner*/
 
-#banner { width:100%; height:auto;overflow:hidden; margin-top:1px;min-width:1000px; }
+#banner { width:100%; height:auto;overflow:hidden; margin-top:1px;min-width:1200px; }
 #banner .packet {width:100%;height:auto; position: relative; }
 #banner .packet ul { position: relative; top: 0; left: 0; z-index: 1; width:100%;height:650px;}
 #banner .packet ul li { position:absolute; width:100%;height:650px;top:0px; left:0px; opacity:0; filter:alpha(opacity:0); }
@@ -317,9 +329,9 @@ section .contain{background:#23232e;
   left:10px;}
 .backward {background:url(../img/right.png);
    right:10px;}
-   
+.dragbanner{min-width:1200px;}   
 /*mode_1*/
-.mode_1{background:#23232e;padding:20px 0;}
+.mode_1{background:#23232e;padding:20px 0;min-width:1200px;}
 .title2{
        height:40px;width:100%;padding:35px 0;
 	   display:inline-block;text-align:center;
@@ -370,7 +382,7 @@ section .contain{background:#23232e;
 .port_img li img{width:100%;height:100%;}
 
 /*mode_2*/
-.mode_2{background:#f3f1f2;padding:20px 0;}
+.mode_2{background:#f3f1f2;padding:20px 0;min-width:1200px;}
 .title1{
        height:40px;width:100%;padding:35px 0;
 	   display:inline-block;text-align:center;
@@ -465,7 +477,7 @@ section .contain{background:#23232e;
 
 /*mode_3*/
 
-.mode_3{background:#23232e;}
+.mode_3{background:#23232e;min-width:1200px;}
 
 .move_mode{width:1200px;margin:35px auto 0px;}
 .move_content{margin-top:10px;}
@@ -825,7 +837,7 @@ padding:12px;
 }
 
 /*mode4*/
-.mode_4{background:#f3f1f2;}
+.mode_4{background:#f3f1f2;min-width:1200px;}
 .read_mode{width:1200px;margin:35px auto 0;}
 .read_container{
 			width: 600px;
@@ -944,7 +956,7 @@ padding:12px;
 .read_img6{background:url(../img/red4.jpg) no-repeat;
            background-size: cover;}
 /*mode_5*/
-.mode_5{background:#23232e;padding:20px 0;}
+.mode_5{background:#23232e;padding:20px 0;min-width:1200px;}
 
 .travel_mod{width:1200px;margin: 10px auto;}
 .travel_content{margin-top:20px;}
@@ -1023,22 +1035,20 @@ padding:12px;
 		  color:#f3f1f2;}
 
 /*mode_6*/
-.mode_6{background:#f3f1f2;padding:10px 0;}
+.mode_6{background:#f3f1f2;padding:10px 0;min-width:1200px;}
 .design_mod{width:1200px;margin: 30px auto 0;}
 .design_mod h3{margin:10px 30px;display:block;
 		  font-family: segoeuib, Arial, sans-serif;
 		  font-size:18px;
 		  color:#23232e;}
-.design_mod .litem{width:200px;height:200px;transition:0.9s;}
+/*.design_mod .litem{width:200px;height:200px;
+                  }*/
 .design_mod ul{width:700px;height:700px;margin:30px auto 0;}
-.design_mod ul li{width:200px;height:200px;float:left;
-     border: 2px solid #23232e;
-			background-size: cover;
-			transition: .3s;
-			z-index: 10;
-			position: relative;
-			margin:6px;
-			
+.design_mod ul li{display:inline-block;border: 2px solid #23232e;position: relative;
+				   transition: .3s;
+			       background-size: cover;
+		           z-index:10;
+				   margin:5px;
 	 }
 .design_mod ul li h4{background:#23232e;
             width:100%;
@@ -1047,16 +1057,19 @@ padding:12px;
 			position:absolute;
 			left:0;bottom:0;
 			padding:2px 2px;
+			
 			 color:#f3f1f2;font-family: segoeuib, Arial, sans-serif;
 			 font-size: 10px;
-			
 			 opacity:0;}
-.design_mod ul li:hover .litem{tranform:scale(1.2) rotate(360deg)}
-.design_mod ul li h4:hover{opacity:0.9;}
-.design_mod ul li a{width:100%;height:100%;display:block;
+.design_mod ul li a{width:200px;height:200px;display:block;z-index:10;
+		
+			
 }
 
-footer{background:#23232e;padding:10px 0;}
+.design_mod ul li:hover h4{opacity:0.9;}
+
+
+footer{background:#23232e;padding:10px 0;min-width:1200px;}
 
 .site-inner .copy-02{
 	padding:30px 180px;
@@ -1097,51 +1110,51 @@ footer{background:#23232e;padding:10px 0;}
 	
 }
 .social-icons a span {
-width: 53px;
-height: 50px;
-background: url('../img/social.png') no-repeat 0px 0px;
-display: inline-block;
-margin: 0 5px;
+		width: 53px;
+		height: 50px;
+		background: url('../img/social.png') no-repeat 0px 0px;
+		display: inline-block;
+		margin: 0 5px;
 }
 .social-icons a span.beh {
-background-position:0px 0px;
+         background-position:0px 0px;
 }
 .social-icons a span.beh:hover{
-background-position:1px -67px;
-transition:0.5s all;
+	background-position:1px -67px;
+	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
 .social-icons a span.face {
-background-position: -58px 0px;
+    background-position: -58px 0px;
 }
 .social-icons a span.face:hover{
-background-position: -58px -67px;
-transition:0.5s all;
+	background-position: -58px -67px;
+	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
 .social-icons a span.pin{
-background-position: -119px 0px;
+    background-position: -119px 0px;
 }
 .social-icons a span.pin:hover{
-background-position: -119px -67px;
-transition:0.5s all;
+	background-position: -119px -67px;
+	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
 .social-icons a span.br{
-background-position:-179px 0px;
+     background-position:-179px 0px;
 }
 .social-icons a span.br:hover{
-background-position:-179px -67px;
-transition:0.5s all;
+	background-position:-179px -67px;
+	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;

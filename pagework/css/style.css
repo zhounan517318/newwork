@@ -3,7 +3,7 @@
 
 
 
-.container{width:100%;margin-bottom:10px;margin-top:2px;background:#f3f1f2;}
+.container{min-width:1200px;width:100%;margin-bottom:10px;margin-top:2px;background:#f3f1f2;}
 
 
 .title{
